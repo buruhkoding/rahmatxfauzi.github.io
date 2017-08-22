@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://rahmatxfauzi.github.io/post/latihan-pos/</loc>
+    <loc>https://rahmatxfauzi.github.io/post/latihan-pos/</loc>
     <lastmod>2017-08-22T01:09:12+07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rahmatxfauzi.github.io/categories/</loc>
+    <loc>https://rahmatxfauzi.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://rahmatxfauzi.github.io/post/</loc>
-    <lastmod>2017-08-22T01:09:12+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rahmatxfauzi.github.io/</loc>
+    <loc>https://rahmatxfauzi.github.io/post/</loc>
     <lastmod>2017-08-22T01:09:12+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://rahmatxfauzi.github.io/tags/</loc>
+    <loc>https://rahmatxfauzi.github.io/</loc>
+    <lastmod>2017-08-22T01:09:12+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rahmatxfauzi.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
