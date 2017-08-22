@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RAHMATxFAUZI</title>
+    <link>http://rahmatxfauzi.github.io/</link>
+    <description>Recent content on RAHMATxFAUZI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Aug 2017 01:09:12 +0700</lastBuildDate>
+    
+	<atom:link href="http://rahmatxfauzi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Latihan Pos! Slololo</title>
+      <link>http://rahmatxfauzi.github.io/post/latihan-pos/</link>
+      <pubDate>Tue, 22 Aug 2017 01:09:12 +0700</pubDate>
+      
+      <guid>http://rahmatxfauzi.github.io/post/latihan-pos/</guid>
+      <description>coba coba
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+  </channel>
+</rss>
