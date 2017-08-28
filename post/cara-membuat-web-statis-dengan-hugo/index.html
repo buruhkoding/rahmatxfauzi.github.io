@@ -1,0 +1,233 @@
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Rahmat Fauzi">
+		<meta name="description" content="My blog github page">
+		<meta name="generator" content="Hugo 0.26" />
+		<title>Cara Membuat Web Statis Dengan Hugo &middot; RAHMATxFAUZI</title>
+		<link rel="shortcut icon" href="https://rahmatxfauzi.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://rahmatxfauzi.github.io/css/style.css">
+		<link rel="stylesheet" href="https://rahmatxfauzi.github.io/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://rahmatxfauzi.github.io/css/font-awesome.min.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://rahmatxfauzi.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://rahmatxfauzi.github.io/post'>Archive</a>
+	<a href='https://rahmatxfauzi.github.io/tags'>Tags</a>
+	<a href='https://rahmatxfauzi.github.io/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        Cara Membuat Web Statis Dengan Hugo
+                    </h1>
+                    <h2 class="headline">
+                    Aug 24, 2017 00:40
+                    · 504 words
+                    · 3 minutes read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<p>Untuk post pertama saya, disini saya akan membagikan tutorial dimana saya membuat web statis ini menggunakan hosting gratis dari github.
+Sebelumnya buat yang belum tau apa itu <strong>Hugo</strong>, <code>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.</code> Intinya ini salah satu Generator Web Statis yang ringan dibanding dengan SSG yang lain dan menggunakan bahasa <strong>GO</strong>. Kita dapat menulis artikel secara offline menggunakan text editor favorit kita, jadi kita tidak perlu susah payah untuk mem-preview hasil dari artikel kita dan dapat kita publish disaat kita sudah online nantinya. Oke tanpa basa basi langsung saja <em>Let&rsquo;s do that !</em></p>
+
+<h2 id="1-instalisasi-hugo-dan-go">1. Instalisasi Hugo dan GO</h2>
+
+<p>Sebelum mengikuti tutorial ini lebih baiknya kalian sudah menginstall <strong>GIT</strong> pada OS kalian.
+Saya disini menggunakan versi Hugo yang terakhir release saat artikel ini ditulis yaitu <em>v.026</em>. Kalian bisa download Hugo sesuai dengan versi OS kalian, disini saya menggunakan linux untuk membuat websitenya. Jadi untuk OS lain seperti Windows/Mac bisa menyesuaikan :D.
+Berikut link hugo nya:</p>
+
+<pre><code>https://github.com/gohugoio/hugo/releases
+</code></pre>
+
+<p>Setelah kalian download install seperti biasa menggunakan <em>dpkg</em> di terminal.</p>
+
+<pre><code>sudo dpkg -i hugo_0.26_Linux-64bit.deb
+</code></pre>
+
+<p>Jika sudah selesai proses install, silahkan cek version hugonya.</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<p>Kemudian kita install bahasa <strong>GO</strong> pada komputer kita.</p>
+
+<pre><code>sudo apt install go
+</code></pre>
+
+<p>Periksa versi go.</p>
+
+<pre><code>go version
+</code></pre>
+
+<h2 id="2-membuat-website-baru">2. Membuat Website Baru</h2>
+
+<p>Setelah kita berhasil instalisasi <strong>Hugo</strong> dan <strong>GO</strong> selanjutnya kita akan membuat websitenya. Sangat mudah membuat website baru di Hugo menggunakan terminal linux kalian.</p>
+
+<p>Untuk membuat website baru di Hugo, menggunakan perintah ini :</p>
+
+<pre><code>hugo new site [nama web]
+</code></pre>
+
+<p>Otomatis hugo akan membuat folder baru sesuai nama web nya</p>
+
+<p>Lalu masuk ke dalam folder</p>
+
+<pre><code>cd [nama folder]
+</code></pre>
+
+<p><img src="/img/membuat-web-statis/1.png" alt="alt text" />
+Dan kita sudah berhasil membuat web yang diinginkan</p>
+
+<h2 id="3-memilih-tema-dan-menginstallnya">3. Memilih Tema dan Menginstallnya</h2>
+
+<p>Cukup mudah bukan langkah-langkah membuat website nya sampai nomor 3 ini. Oke di langkah ketiga ini kita akan menginstall tema pada Hugo, sangat mudah sekali.</p>
+
+<p>Pertama kita pilih dahulu tema hugo yang ingin kita install pada web kita. Untuk download nya bisa melalui website ini:</p>
+
+<p><a href="https://themes.gohugo.io">https://themes.gohugo.io</a></p>
+
+<p><img src="/img/membuat-web-statis/2.png" alt="alt text" /></p>
+
+<p>Disini saya akan install tema <strong>Hyde</strong>.</p>
+
+<pre><code>cd themes
+git clone https://github.com/spf13/hyde.git
+</code></pre>
+
+<p><img src="/img/membuat-web-statis/3.png" alt="alt text" /></p>
+
+<p>Kemudian kita kembali ke folder utama, dan edit file <strong>config.toml</strong></p>
+
+<pre><code>cd ..
+nano config.toml
+</code></pre>
+
+<p>Lalu tambahkan sebagai berikut:</p>
+
+<pre><code>languageCode = &quot;en-us&quot;
+title = &quot;Blog | HBS&quot;
+#tambahkan seperti dibawah ini sesuai nama tema kalian
+theme = &quot;hyde&quot;
+</code></pre>
+
+<p>Lalu kita sinkronkan ke hugo :</p>
+
+<pre><code>hugo -t [nama tema]
+</code></pre>
+
+<p>Setelah selesai, kita bisa melihat bagaimana bentukan website kita menggunakan localhost</p>
+
+<pre><code>hugo server
+</code></pre>
+
+<p><img src="/img/membuat-web-statis/4.png" alt="alt text" /></p>
+
+<h2 id="4-cara-menulis-artikel-di-hugo">4. Cara Menulis Artikel di Hugo</h2>
+
+<p>Setelah website kita jadi, kita bisa membuat artikel menggunakan text editor kesayangan kita. Ohh iya, di Hugo kita menulis artikel menggunakan bahasa Markdown (.MD) Kalian bisa melihat list commmand pengganti syntax <strong>HTML</strong> <a href="https://google.com">disini</a>. Tanpa basa basi lagi langsung saja kita membuat artikel nya:</p>
+
+<pre><code>hugo new post/[nama-artikel].md
+</code></pre>
+
+<p>Contoh :</p>
+
+<pre><code>hugo new post/belajar-membuat-artikel.md
+</code></pre>
+
+<p>Filenya berada di /contents/post/.
+Jangan lupa mengubah nilai <code>draft</code> dari <code>true</code> menjadi <code>false</code> agar bisa tampil pada website.</p>
+
+<p><img src="/img/membuat-web-statis/6.png" alt="alt text" /></p>
+
+<p><strong>Yeayy!!!</strong> Kita udah berhasil membuat web statis menggunakan Hugo.</p>
+
+<p><img src="/img/membuat-web-statis/5.png" alt="alt text" /></p>
+
+<p>Cukup sekian artikel kali ini, kurang lebihnya mohon maaf :D
+Bila ada yang ditanyakan bisa hubungi sosmed saya.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.facebook.com/uzhiex">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/rahmatxfauzi">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/rhmtfauzi__">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2017 <i class="fa fa-heart" aria-hidden="true"></i> Rahmat Fauzi
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://rahmatxfauzi.github.io/js/jquery-2.2.4.min.js"></script>
+<script src="https://rahmatxfauzi.github.io/js/main.js"></script>
+<script src="https://rahmatxfauzi.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

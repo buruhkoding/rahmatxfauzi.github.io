@@ -6,19 +6,38 @@
     <description>Recent content on RAHMATxFAUZI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Aug 2017 01:09:12 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 24 Aug 2017 00:40:29 +0700</lastBuildDate>
     
 	<atom:link href="https://rahmatxfauzi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Latihan Pos! Slololo</title>
+      <title>Cara Membuat Web Statis Dengan Hugo</title>
+      <link>https://rahmatxfauzi.github.io/post/cara-membuat-web-statis-dengan-hugo/</link>
+      <pubDate>Thu, 24 Aug 2017 00:40:29 +0700</pubDate>
+      
+      <guid>https://rahmatxfauzi.github.io/post/cara-membuat-web-statis-dengan-hugo/</guid>
+      <description>Untuk post pertama saya, disini saya akan membagikan tutorial dimana saya membuat web statis ini menggunakan hosting gratis dari github. Sebelumnya buat yang belum tau apa itu Hugo, Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. Intinya ini salah satu Generator Web Statis yang ringan dibanding dengan SSG yang lain dan menggunakan bahasa GO. Kita dapat menulis artikel secara offline menggunakan text editor favorit kita, jadi kita tidak perlu susah payah untuk mem-preview hasil dari artikel kita dan dapat kita publish disaat kita sudah online nantinya.</description>
+    </item>
+    
+    <item>
+      <title>Persis Solo Chant B6</title>
       <link>https://rahmatxfauzi.github.io/post/latihan-pos/</link>
       <pubDate>Tue, 22 Aug 2017 01:09:12 +0700</pubDate>
       
       <guid>https://rahmatxfauzi.github.io/post/latihan-pos/</guid>
-      <description>coba coba
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <description>PANTANG MENYERAH Hari kehari telah kita lewati
+Suka dan duka pernah kita alami
+Pantang menyerah walau kadang kau lelah
+Namun ku tetap setia bersamamu..
+Dengan rasa bangga kuyanyikan lagu untukmu
+Ayo terbang tinggi sang legenda
+Berikanlah kami gelar juara
+Sambernyawa&amp;hellip;.
+Mari kita bersama lagi
+Kamu takkan pernah sendiri
+Satu cinta selamanya sambernyawa
+Satu cinta selamanya sambernyawa</description>
     </item>
     
   </channel>
